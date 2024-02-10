@@ -137,3 +137,184 @@
     
     
     
+
+
+    // Find the max number in An Array
+{
+
+    const number = [47872,56,89,450,96,102,1885];
+
+    let maxNum = 0
+
+    for (let i = 0; i < number.length; i++) {
+        const element = number[i];
+
+        if (maxNum < element) {
+            maxNum = element
+        }
+        
+    }
+
+    // console.log({maxNum});
+
+
+}
+
+
+//  Second max number in an array
+
+
+{
+
+
+const number = [42,56,190,89,200,450,96,102,188];
+
+    let maxNum = 0;
+    for (let i = 0; i < number.length; i++) {
+    // const element = number[i];
+
+    if (maxNum < number[i] ) {
+        maxNum = number[i]
+    }
+
+    
+    }
+
+    
+    let secondMaxArr = []
+
+    for (let i = 0; i < number.length; i++) {
+        const element = number[i];
+
+        if (maxNum > element) {
+            secondMaxArr.push(element)
+        }
+        
+    }
+
+
+
+
+    let secondMaxNum = 0
+    for (let i = 0; i < secondMaxArr.length; i++) {
+        const element = secondMaxArr[i];
+        
+        if (secondMaxNum < element) {
+            secondMaxNum = element
+        }
+    }
+
+
+
+
+
+// console.log(secondMaxNum);
+
+
+}
+
+
+// Sum of numbers in an array
+
+{
+    const number = [42,56,190,89,200,450,96,102,188];
+
+    let sum = 0;
+    for (let i = 0; i < number.length; i++) {
+        const element = number[i];
+
+        sum += element
+        
+    }
+
+    // console.log(sum);
+
+}
+
+// Average of All numbers in an array
+
+{
+
+    const number = [42,56,190,89,200,450,96,102,188];
+
+    let sum = 0;
+    for (let i = 0; i < number.length; i++) {
+        const element = number[i];
+
+        sum += element
+        
+    }
+
+    const average = sum  / number.length
+    // console.log(average);
+
+
+}
+
+
+// Remove duplicate number from an array
+
+
+{
+
+    const number = [42,56,190,89,200,450,96,102,188,42];
+
+  
+    let duplicateNum = []
+
+    for (let i = 0; i < number.length; i++) {
+        const element = number[i];
+
+            if ( duplicateNum.indexOf(element) === -1 ) {
+              duplicateNum.push(element)
+            }
+                
+            
+
+
+    }
+
+ 
+
+
+}
+
+
+
+
+
+
+// Check if array contains the given value
+
+
+{
+
+    const number = [42,56,190,89,200,450,96,102,188,42];
+
+    
+
+    const findElement = (arr , value) => {
+        let isFound = false;
+        for (let i = 0; i < arr.length; i++) {
+            const element = arr[i];
+            
+            if (value === element) {
+                console.log("Yes! We Found " , element);
+                isFound = true
+                break;
+            }
+
+        }
+        if (isFound == false) {
+            console.log("Not Found");
+        }
+    }
+
+
+    
+    // findElement(number, 56)
+}
+
+
+
+
